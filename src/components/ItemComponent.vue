@@ -14,12 +14,12 @@ const props = defineProps(["item"]);
   </div>
 </template>
 
-<style>
+<style scoped>
 p{
     margin: 0;
 }
 .itemcontainer {
-    padding: 1em;
+  padding: 1em;
   width: 50vw;
   border-top: solid 1px gray;
   display: grid;
@@ -34,5 +34,10 @@ p{
 .buyer{
     text-transform: capitalize;
 }
+.icon{
+  width: 64px;
+  height: 64px;
+}
 
 </style>
+

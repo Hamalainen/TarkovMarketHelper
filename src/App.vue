@@ -4,9 +4,9 @@ import HeaderComponent from './components/HeaderComponent.vue';
 </script>
 
 <template>
-  <HeaderComponent/>
   <div class="background">
     <div class="background_smear">
+      <HeaderComponent/>
       <RouterView />
     </div>
   </div>
@@ -18,15 +18,14 @@ import HeaderComponent from './components/HeaderComponent.vue';
 }
 .background {
   overflow: auto;
-  height: calc(100vh - 6vh);
+  height: 100vh;
   width: 100vw;
   background-image: url(@/assets/backgroundTarkov.webp);
-  background-repeat: repeat-y;
   background-position: center;
-  background-size: 100vw 100vh;
   position: fixed;
 }
 .background_smear{
   background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
 }
 </style>

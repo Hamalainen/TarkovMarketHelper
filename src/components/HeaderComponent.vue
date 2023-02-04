@@ -6,11 +6,10 @@
 
 <style>
 .header{
-  height: 6vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   border-bottom: white solid 1px;
 }

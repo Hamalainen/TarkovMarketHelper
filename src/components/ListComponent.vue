@@ -15,8 +15,10 @@ addEventListener("resize", (event) => {
     <div class="header_list">
       <p class="iconplaceholder"></p>
       <p>Name</p>
-      <p>Average prive on market</p>
+      <p>Average price on market</p>
+      <p>Flea market price</p>
       <p>Best trader</p>
+      <p>Profit when sold to trader</p>
     </div>
     <ItemComponent
       v-if="innerwidth > 600"
@@ -38,7 +40,7 @@ addEventListener("resize", (event) => {
   gap: 3rem;
   width: 50vw;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(6, 1fr);
 }
 .iconplaceholder {
   width: 64px;
